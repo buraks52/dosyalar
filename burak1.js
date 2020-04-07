@@ -1322,7 +1322,7 @@
             return c.zk = a
         }), b("sounds/kick.ogg").then(function(a) {
             return c.bp = a
-        }), b("sounds/goal.ogg").then(function(a) {
+        }), b("https://buraks52.github.io/dosyalar/Goal%20Motion%20Graphic.ogg").then(function(a) {
             return c.Io = a
         }), b("sounds/join.ogg").then(function(a) {
             return c.$o = a
@@ -5869,7 +5869,7 @@
         if (null == h.wb) {
             h.wb = [];
             var a = new h;
-            a.Qk("Classic", 420, 200, 370, 170, 64, 75);
+            a.ad("Classic", 420, 200, 370, 170, 64, 75);
             h.wb.push(a);
             a = new h;
             a.ad("Easy", 420, 200, 370, 170, 90, 75);
