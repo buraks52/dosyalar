@@ -6409,7 +6409,7 @@
             };
             h.ka(c, "maxViewWidth", this.Ye, 0);
             h.ka(c, "cameraFollow", 1 == this.Ge ? "player" : "", "");
-            h.ka(c, "spawnDistance", this.kc, 600);
+            h.ka(c, "spawnDistance", this.kc, 1200);
             0 != k.length && (c.joints = k);
             0 != l.length && (c.redSpawnPoints = l);
             0 != t.length && (c.blueSpawnPoints = t);
@@ -6470,7 +6470,7 @@
             this.qc = r.G(e.height, z);
             this.Ye = this.be(e, "maxViewWidth", 0) | 0;
             "player" == e.cameraFollow && (this.Ge = 1);
-            this.kc = 200;
+            this.kc = 1200;
             a = e.spawnDistance;
             null != a && (this.kc = r.G(a, z));
             a = e.bg;
