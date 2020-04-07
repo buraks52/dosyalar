@@ -6143,13 +6143,13 @@
     };
     h.jq = function(a) {
         var b = {};
-        h.ka(b, "bCoef":2.5);
+        h.ka(b, "bCoef", 2.5);
         h.ka(b, "invMass", a.aa, .5);
         h.ka(b, "damping", a.Ca, .96);
-        h.ka(b, "acceleration":0.1);
-        h.ka(b, "kickingAcceleration":10);
+        h.ka(b, "acceleration", 0.1);
+        h.ka(b, "kickingAcceleration", 10);
         h.ka(b, "kickingDamping", a.Ue, .96);
-        h.ka(b, "kickStrength":10);
+        h.ka(b, "kickStrength", 10);
         h.Jc(b, "cGroup", a.v, 0);
         if (0 != a.oa.x || 0 != a.oa.y) b.gravity = [a.oa.x, a.oa.y];
         h.ka(b, "radius", a.Z, 15);
