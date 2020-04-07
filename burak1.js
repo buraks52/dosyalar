@@ -6152,9 +6152,9 @@
         h.ka(b, "kickStrength", 100);
         h.Jc(b, "cGroup", 10);
         if (0 != a.oa.x || 0 != a.oa.y) b.gravity = [a.oa.x, a.oa.y];
-        h.ka(b, "radius", a.Z, 15);
+        h.ka(b, "radius", 60);
         h.ka(b,
-            "kickback", a.Se, 0);
+            "kickback", 30);
         return b
     };
     h.lp = function(a) {
