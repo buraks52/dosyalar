@@ -4547,7 +4547,7 @@
                 case "Down":
                     return 2;
                 case "Kick":
-                    return 16;
+                    return 3;
                 case "Left":
                     return 4;
                 case "Right":
