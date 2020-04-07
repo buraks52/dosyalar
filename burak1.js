@@ -6498,7 +6498,7 @@
             this.pf = "full" == e.kickOffReset;
             var g = e.traits;
             a = e.ballPhysics;
-            "disc0" != a && (null != a ? (a = h.Mk(a, this.dg()), a.v |= 192, this.F.push(a)) : this.F.push(this.dg()));
+            "disc0" != a && (null != a ? (a = h.Mk(a, this.dg()), a.v |= 300, this.F.push(a)) : this.F.push(this.dg()));
             c(this.J, "vertexes", h.np);
             c(this.U, "segments", function(a) {
                 return h.mp(a, d.J)
