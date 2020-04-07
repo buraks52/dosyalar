@@ -4547,7 +4547,7 @@
                 case "Down":
                     return 2;
                 case "Kick":
-                    return 3;
+                    return 16;
                 case "Left":
                     return 4;
                 case "Right":
@@ -6143,16 +6143,16 @@
     };
     h.jq = function(a) {
         var b = {};
-        h.ka(b, "bCoef", a.Ce, .1);
-        h.ka(b, "invMass", a.Ce, .1);
-        h.ka(b, "damping", a.Ce, .1);
+        h.ka(b, "bCoef", a.m, .5);
+        h.ka(b, "invMass", a.aa, .5);
+        h.ka(b, "damping", a.Ca, .96);
         h.ka(b, "acceleration", a.Ce, .1);
-        h.ka(b, "kickingAcceleration", a.Ce, .1);
-        h.ka(b, "kickingDamping", a.Ce, .1);
-        h.ka(b, "kickStrength", a.Ce, .1);
+        h.ka(b, "kickingAcceleration", a.Te, .07);
+        h.ka(b, "kickingDamping", a.Ue, .96);
+        h.ka(b, "kickStrength", a.Re, 5);
         h.Jc(b, "cGroup", a.v, 0);
         if (0 != a.oa.x || 0 != a.oa.y) b.gravity = [a.oa.x, a.oa.y];
-        h.ka(b, "radius", a.Z, 0);
+        h.ka(b, "radius", a.Z, 15);
         h.ka(b,
             "kickback", a.Se, 0);
         return b
@@ -6498,7 +6498,7 @@
             this.pf = "full" == e.kickOffReset;
             var g = e.traits;
             a = e.ballPhysics;
-            "disc0" != a && (null != a ? (a = h.Mk(a, this.dg()), a.v |= 150, this.F.push(a)) : this.F.push(this.dg()));
+            "disc0" != a && (null != a ? (a = h.Mk(a, this.dg()), a.v |= 192, this.F.push(a)) : this.F.push(this.dg()));
             c(this.J, "vertexes", h.np);
             c(this.U, "segments", function(a) {
                 return h.mp(a, d.J)
