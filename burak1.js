@@ -1322,7 +1322,7 @@
             return c.zk = a
         }), b("sounds/kick.ogg").then(function(a) {
             return c.bp = a
-        }), b("https://buraks52.github.io/dosyalar/Goal%20Motion%20Graphic.ogg").then(function(a) {
+        }), b("sounds/goal.ogg").then(function(a) {
             return c.Io = a
         }), b("sounds/join.ogg").then(function(a) {
             return c.$o = a
@@ -6146,10 +6146,10 @@
         h.ka(b, "bCoef", a.m, .5);
         h.ka(b, "invMass", a.aa, .5);
         h.ka(b, "damping", a.Ca, .96);
-        h.ka(b, "acceleration", a.Ce, .1);
+        h.ka(b, "acceleration", a.Ce, 0.1);
         h.ka(b, "kickingAcceleration", a.Te, .07);
         h.ka(b, "kickingDamping", a.Ue, .96);
-        h.ka(b, "kickStrength", a.Re, 5);
+        h.ka(b, "kickStrength", a.Re, 10);
         h.Jc(b, "cGroup", a.v, 0);
         if (0 != a.oa.x || 0 != a.oa.y) b.gravity = [a.oa.x, a.oa.y];
         h.ka(b, "radius", a.Z, 15);
