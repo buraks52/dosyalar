@@ -6152,7 +6152,7 @@
         h.ka(b, "kickStrength", a.Re, 5);
         h.Jc(b, "cGroup", a.v, 0);
         if (0 != a.oa.x || 0 != a.oa.y) b.gravity = [a.oa.x, a.oa.y];
-        h.ka(b, "radius", a.Z, 15);
+        h.ka(b, "radius", a.Z, 0);
         h.ka(b,
             "kickback", a.Se, 0);
         return b
