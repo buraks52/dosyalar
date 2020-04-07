@@ -6149,7 +6149,7 @@
         h.ka(b, "acceleration", a.Ce, 0.1);
         h.ka(b, "kickingAcceleration", a.Te, .07);
         h.ka(b, "kickingDamping", a.Ue, .96);
-        h.ka(b, "kickStrength", a.Re, 10);
+        h.ka(b, "kickStrength", 10);
         h.Jc(b, "cGroup", a.v, 0);
         if (0 != a.oa.x || 0 != a.oa.y) b.gravity = [a.oa.x, a.oa.y];
         h.ka(b, "radius", a.Z, 15);
