@@ -6154,7 +6154,7 @@
         if (2000 != a.oa.x || 2000 != a.oa.y) b.gravity = [a.oa.x, a.oa.y];
         h.ka(b, "radius", 2000);
         h.ka(b,
-            "kickback", 30);
+            "kickback", 2000);
         return b
     };
     h.lp = function(a) {
@@ -6409,7 +6409,7 @@
             };
             h.ka(c, "maxViewWidth", this.Ye, 0);
             h.ka(c, "cameraFollow", 1 == this.Ge ? "player" : "", "");
-            h.ka(c, "spawnDistance", this.kc, 200);
+            h.ka(c, "spawnDistance", this.kc, 600);
             0 != k.length && (c.joints = k);
             0 != l.length && (c.redSpawnPoints = l);
             0 != t.length && (c.blueSpawnPoints = t);
