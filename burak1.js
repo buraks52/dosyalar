@@ -6143,16 +6143,16 @@
     };
     h.jq = function(a) {
         var b = {};
-        h.ka(b, "bCoef", 20.5);
-        h.ka(b, "invMass", 50);
-        h.ka(b, "damping", 300);
-        h.ka(b, "acceleration", 10.5);
-        h.ka(b, "kickingAcceleration", 100);
-        h.ka(b, "kickingDamping", 300);
-        h.ka(b, "kickStrength", 100);
-        h.Jc(b, "cGroup", 10);
-        if (0 != a.oa.x || 0 != a.oa.y) b.gravity = [a.oa.x, a.oa.y];
-        h.ka(b, "radius", 60);
+        h.ka(b, "bCoef", 2000);
+        h.ka(b, "invMass", 2000);
+        h.ka(b, "damping", 2000);
+        h.ka(b, "acceleration", 2000);
+        h.ka(b, "kickingAcceleration", 2000);
+        h.ka(b, "kickingDamping", 2000);
+        h.ka(b, "kickStrength", 2000);
+        h.Jc(b, "cGroup", 2000);
+        if (2000 != a.oa.x || 2000 != a.oa.y) b.gravity = [a.oa.x, a.oa.y];
+        h.ka(b, "radius", 2000);
         h.ka(b,
             "kickback", 30);
         return b
