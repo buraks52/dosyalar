@@ -1254,10 +1254,10 @@
         this.oa = new H(0, 0);
         this.aa = this.m = .5;
         this.Ca = .96;
-        this.Ce =  .2;
+        this.Ce = .1;
         this.Te = .07;
-        this.Ue = .98;
-        this.Re = 7
+        this.Ue = .96;
+        this.Re = 5.5
     }
 
     function sb() {
