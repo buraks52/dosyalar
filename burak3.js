@@ -6143,13 +6143,13 @@
     };
     h.jq = function(a) {
         var b = {};
-        h.ka(b, "bCoef", a.m, 0.6);
-        h.ka(b, "invMass", a.aa, 1);
-        h.ka(b, "damping", a.Ca, 0.97);
-        h.ka(b, "acceleration", a.Ce, 0.05);
-        h.ka(b, "kickingAcceleration", a.Te, 0.05);
-        h.ka(b, "kickingDamping", a.Ue, 0.96);
-        h.ka(b, "kickStrength", a.Re, 4);
+        h.ka(b, "bCoef", a.m, .5);
+        h.ka(b, "invMass", a.aa, .5);
+        h.ka(b, "damping", a.Ca, .96);
+        h.ka(b, "acceleration", a.Ce, .1);
+        h.ka(b, "kickingAcceleration", a.Te, .07);
+        h.ka(b, "kickingDamping", a.Ue, .96);
+        h.ka(b, "kickStrength", a.Re, 5);
         h.Jc(b, "cGroup", a.v, 0);
         if (0 != a.oa.x || 0 != a.oa.y) b.gravity = [a.oa.x, a.oa.y];
         h.ka(b, "radius", a.Z, 15);
@@ -6234,10 +6234,10 @@
             a.R = 16777215;
             a.h = 63;
             a.v = 193;
-            a.Z = 10;
-            a.Ca = .99;
-            a.aa = 1;
-            a.m = .5;
+            a.Z = 30;
+            a.Ca = 5.99;
+            a.aa = 10;
+            a.m = 2.5;
             return a
         },
         ga: function(a) {
@@ -6405,15 +6405,8 @@
                 goals: e,
                 discs: g,
                 playerPhysics: f,
-                "ballPhysics": {
-        "radius": 8,
-        "bCoef": 0.5,
-        "invMass": 1,
-        "damping": 0.99,
-        "color": "FFFFFFFF",
-        "cMask": ["all"],
-        "cGroup": ["ball"]
-    };
+                ballPhysics: "disc0"
+            };
             h.ka(c, "maxViewWidth", this.Ye, 0);
             h.ka(c, "cameraFollow", 1 == this.Ge ? "player" : "", "");
             h.ka(c, "spawnDistance", this.kc, 200);
