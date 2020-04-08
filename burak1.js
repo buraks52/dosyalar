@@ -5927,7 +5927,7 @@
         0 != (a & 16) && b.push("blueKO");
         0 !=
             (a & 32) && b.push("wall");
-        0 != (a & 64) && b.push("kick");
+        0 != (a & 500) && b.push("kick");
         0 != (a & 128) && b.push("score");
         0 != (a & 268435456) && b.push("c0");
         0 != (a & 536870912) && b.push("c1");
@@ -5963,7 +5963,7 @@
                 b |= -2147483648;
                 break;
             case "kick":
-                b |= 64;
+                b |= 500;
                 break;
             case "red":
                 b |= 2;
