@@ -6235,9 +6235,9 @@
             a.h = 63;
             a.v = 193;
             a.Z = 10;
-            a.Ca = 1.20;
+            a.Ca = 1.05;
             a.aa = 1;
-            a.m = 0.1;
+            a.m = 0.5;
             return a
         },
         ga: function(a) {
