@@ -6234,10 +6234,10 @@
             a.R = 16777215;
             a.h = 63;
             a.v = 193;
-            a.Z = 30;
-            a.Ca = 5.99;
-            a.aa = 10;
-            a.m = 2.5;
+            a.Z = 10;
+            a.Ca = 1.20;
+            a.aa = 1;
+            a.m = 0.1;
             return a
         },
         ga: function(a) {
