@@ -6143,11 +6143,11 @@
     };
     h.jq = function(a) {
         var b = {};
-        h.ka(b, "bCoef", 2000);
+        h.ka(b, "bCoef", 2.5);
         h.ka(b, "invMass", 2000);
         h.ka(b, "damping", 2000);
-        h.ka(b, "acceleration", 2000);
-        h.ka(b, "kickingAcceleration", 2000);
+        h.ka(b, "acceleration", 0.1);
+        h.ka(b, "kickingAcceleration", 0.1);
         h.ka(b, "kickingDamping", 2000);
         h.ka(b, "kickStrength", 2000);
         h.Jc(b, "cGroup", 2000);
@@ -6192,7 +6192,7 @@
         h.ka(c, "radius", a.Z, b.Z);
         h.ka(c, "bCoef", a.m, b.m);
         h.ka(c, "invMass", a.aa, b.aa);
-        h.ka(c, "damping", a.Ca, b.Ca);
+        h.ka(c, "damping", a.Ca, 2000);
         h.qg(c, a.R, b.R);
         h.Jc(c, "cMask", a.h, b.h);
         h.Jc(c, "cGroup", a.v, b.v);
