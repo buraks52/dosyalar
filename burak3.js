@@ -1254,10 +1254,10 @@
         this.oa = new H(0, 0);
         this.aa = this.m = .5;
         this.Ca = .96;
-        this.Ce = .1;
+        this.Ce =  .2;
         this.Te = .07;
-        this.Ue = .96;
-        this.Re = 5
+        this.Ue = .98;
+        this.Re = 7
     }
 
     function sb() {
@@ -6235,9 +6235,9 @@
             a.h = 63;
             a.v = 193;
             a.Z = 10;
-            a.Ca = 1.05;
+            a.Ca = .99;
             a.aa = 1;
-            a.m = 0.5;
+            a.m = .5;
             return a
         },
         ga: function(a) {
